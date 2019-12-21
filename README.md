@@ -94,6 +94,7 @@
   - 命令`git tag `用于新建一个标签，默认为`HEAD`，也可以指定一个commit id；
   - 命令`git tag -a  -m "blablabla..."`可以指定标签信息；
   - 命令`git tag`可以查看所有标签。
+  - 切换至指定tag代码。`git checkout -b branch-name tag-name`
 
 - 操作标签
 
