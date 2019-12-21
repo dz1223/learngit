@@ -68,4 +68,19 @@
 
   在master分支上修复的bug，想要合并到当前dev分支，可以用`git cherry-pick `命令，把bug提交的修改“复制”到当前分支，避免重复劳动。
 
+-  Feature分支
+
+  开发一个新feature，最好新建一个分支；
+
+  如果要丢弃一个没有被合并过的分支，可以通过`git branch -D `强行删除。
+
+- 多人协作
+
+  - 查看远程库信息，使用`git remote -v`；
+  - 本地新建的分支如果不推送到远程，对其他人就是不可见的；
+  - 从本地推送分支，使用`git push origin branch-name`，如果推送失败，先用`git pull`抓取远程的新提交；
+  - 在本地创建和远程分支对应的分支，使用`git checkout -b branch-name origin/branch-name`，本地和远程分支的名称最好一致；
+  - 建立本地分支和远程分支的关联，使用`git branch --set-upstream-to=origin/branch-name branch-name `；
+  - 从远程抓取分支，使用`git pull`，如果有冲突，要先处理冲突。
+
 - 
